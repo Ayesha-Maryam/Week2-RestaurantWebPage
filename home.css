@@ -6,7 +6,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;;
+    row-gap: 10px;
 }
 .top-item
 {
@@ -14,9 +14,12 @@ body{
     flex-direction: column;
     gap:70px;
     width:100%;
+    height: 100vh;
     height: max-content;
     position:relative;
     background-image: url("https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .top-item::before{
     content:'';
@@ -137,8 +140,8 @@ align-self: center;
     text-align: left;
 }
 .about{
-    background-color: rgb(231, 254, 246);
-    width: 100%;
+    background-color: rgb(240, 252, 248);
+    /* width: 100%; */
     height: 700px;
 }
 .item-3
@@ -223,6 +226,8 @@ align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:50px;
+    margin-top: 60px;
 
 }
 .food-menu{
@@ -250,10 +255,13 @@ align-self: center;
 }
 .menu-box{
     display: flex;
+    gap:30px;
+    justify-content: center;
 }
 .left-menu{
     display: flex;
     flex-direction: column;
+    justify-self: center;
 }
 .right-menu{
     display: flex;
@@ -266,8 +274,224 @@ align-self: center;
 }
 .menu-items{
     display: flex;
+    gap:20px;
 
 }
+.menu-item
+{
+    position: relative;
+    top:-15px;
+}
+.price{
+    display: flex;
+    gap:50%;
+
+}
+.line-price{
+    margin:0;
+    position: relative;
+    top: -15px;
+}
+.menu-item p{
+    position: relative;
+    top:-10px;
+}
+
+.amount{
+    color:orange;
+}
+
+
+.item-5{
+    display: flex;
+    width:100%;
+    height: auto;
+}
+.booking{
+    background-color: rgb(0, 0, 36);
+
+}
+.book-img{
+    width:100%;
+    height: 500px;
+    object-fit:cover;
+    
+
+}
+.booking-img{
+    width:45%;
+}
+.booking{
+    width:55%;
+}
+.booking-info h3{
+    color:orange;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style: normal;
+}
+.booking-info h1{
+    color:white;
+}
+.name-email{
+    display:flex;
+    gap:30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.date-people{
+    display:flex;
+    gap:30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.input-people{
+    padding:10px;
+    width:186px;
+}
+.input{
+    padding:10px;
+}
+textarea{
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    padding:10px;
+    width: 56%;
+}
+.book-btn
+{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    width:60%;
+    border: 2px;
+}
+.booking-info{
+    text-align: center;
+    margin: auto;
+}
+.booking-form
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.about-chefs
+{
+    text-align: center;
+    
+}
+.about-chefs h3{
+    color:orange;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style: normal;
+}
+.about-chefs h1{
+    color:black;
+}
+.chef-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.chef-box{
+    width:250px;
+    height:300px;
+    box-sizing: border-box;
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.chef-box h4{
+    color: gray;
+}
+.chef-img
+{
+    width:80%;
+    height: auto;;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+     border-radius: 50%; 
+}
+.client{
+    width:100%;
+    height: auto;
+    background-color: rgb(240, 252, 248);
+    position: relative;
+    bottom: -10px;
+}
+.testimonial{
+    margin-top: 50px;
+    text-align: center;
+}
+.testimonial h3{
+    color:orange;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style: normal;
+}
+.comment-boxes{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.comment-box{
+    align-self: center;
+    padding-top:50px;
+    padding:20px;
+    width:280px;
+    height:auto;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.comment-box-2{
+    background-color: orange;
+    color: white;
+}
+.client-details{
+    display:flex;
+    gap: 15px;
+}
+.client-img{
+    align-self: center;
+}
+.client-img img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name-profession p{
+    position: relative;
+    top: -15px;
+}
+.footer{
+    padding:10px;
+    display:flex;
+    background-color: rgb(0, 0, 33);
+    color:white;
+    height:auto;
+    width:100%;
+    justify-content: center;
+    gap:30%;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+
+
 @media screen and (max-width: 600px) {
     .content{
         flex-direction: column;
@@ -299,7 +523,87 @@ align-self: center;
         gap: 10px;
     }
     .line
+    {
+        width:70%;
+    }
+    .menu-box
+    {
+        flex-direction: column;
+        gap:0px;
+        margin: auto;
+        margin-left: 20px;
+    }
+   .item-5{
+    flex-direction: column;
+   }
+   .booking-form
+   {
+    flex-direction: column;
+   }
+
+   .booking-img{
+    width:100%;
+   }
+   .booking{
+    width:100%;
+    position: relative;
+    top: -5px;
+   }
+   .name-email{
+    flex-direction: column;
+    gap:10px;
+    align-self: center;
+    width:80%;
+   }
+   .date-people{
+    flex-direction: column;
+    gap:10px;
+    align-self: center;
+    width:80%;
+   }
+   .input{
+    width:100%;
+}
+.input-people{
+    align-self: center;
+    width:106%;
+    margin-left: 20px;
+}
+.text-area{
+    width:81%;
+    margin-left: 20px;
+}
+.book-btn
 {
-    width:70%;
+    margin-left: 20px;
+    width: 85%;
+    margin-bottom: 50px;
 }
+.chef-boxes{
+    flex-direction: column;
 }
+.chef-box{
+    width: 80%;
+    height:auto;
+    align-self: center;
+}
+.chef-img{
+    width: 60%;  
+}
+.comment-boxes{
+    flex-direction: column;
+}
+.footer{
+    flex-direction: column;
+    gap:10px;
+}
+.footer p{
+    align-self: center;
+}
+.footer .links{
+    align-self: center;
+} 
+}
+
+
+
