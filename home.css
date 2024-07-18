@@ -43,6 +43,8 @@ body{
     display:flex;
     list-style: none;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 .navbar .name{
     margin-right: auto;
@@ -58,6 +60,14 @@ body{
 }
 .navbar .contact{
     color:white;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+.menu-item-nav {
+    display: inline;
 }
 .content{
     position: relative;
@@ -493,6 +503,43 @@ textarea{
 
 
 @media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar .name {
+        margin-right: auto;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu-item-nav {
+        display: none;
+    }
+    .navbar.active .menu-item-nav {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .navbar.active .home-item{
+        margin-top: 30px;
+    }
+    .navbar.active ul {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar.active .menu-icon
+    {
+        align-self: flex-end;
+        position: relative;
+        top: -198px;
+
+    }
     .content{
         flex-direction: column;
         text-align: center;
