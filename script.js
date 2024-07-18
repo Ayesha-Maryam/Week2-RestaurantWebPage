@@ -6,3 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.toggle('active');
     });
 });
+function goToContact()
+{
+    window.location.href="contact.html";
+}
+function goToHome()
+{
+    window.location.href="home.html";
+}

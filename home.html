@@ -12,13 +12,13 @@
 
 <body>
     <div class="container">
-        <div class="top-item">
+        <div id="home" class="top-item">
             <div class="navbar">
                 <ul>
                     <li class="name">Restoran</li>
-                    <li class="menu-item-nav home-item">HOME</li>
-                    <li class="menu-item-nav  contact">CONTACT</li>
-                    <li class="menu-item-nav"><button class="btn">Book a Table</button></li>
+                   <li class="menu-item-nav home-item"><a href="#home">HOME</a></li>
+                    <li class="menu-item-nav  contact"><a href="#contact" onclick="goToContact()">CONTACT</a></li>
+                    <li class="menu-item-nav"><button class="btn"><a href="#book">Book a Table</a></button></li>
                     <li class="menu-icon"><span>&#9776;</span></li>
                 </ul>
             </div>
@@ -27,7 +27,7 @@
                     <h1>Enjoy our Delicious Meal </h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ab accusamus facere neque.
                     </p>
-                    <button class="btn">Book a Table</button>
+                    <button class="btn"><a href="#book">Book a Table</a></button>
                 </div>
                 <div class="img">
                     <img class="meal-img" src="image-removebg-preview.png" alt="">
@@ -95,7 +95,7 @@
                             <p>Popular <br><b>MASTER CHEFS</b></p>
                         </div>
                     </div>
-                    <button class="btn">READ MORE</button>
+                    <button class="btn"><a href="#">READ MORE</a></button>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@
             <div class="booking-img">
                 <img class="book-img" src="image.png" alt="">
             </div>
-            <div class="booking">
+            <div class="booking" id="book">
                 <div class="booking-info">
                     <h3>Reservation</h3>
                     <h1>Book A Table Online</h1>
@@ -243,7 +243,7 @@
                         </select>
                     </div>
                    <div> <textarea class="text-area" placeholder="Special Request" rows="7" cols="52"></textarea> </div>
-                  <div> <button class="book-btn">BOOK NOW</button> </div>
+                  <div> <button class="book-btn"><a href="#book">BOOK NOW</a></button> </div>
                 </form>
             </div>
         </div>
@@ -333,8 +333,8 @@
             <p>&copy; 2024 Restoran. All Rights Reserved.</p>
             <div class="links">
                 <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact" onclick="goToContact()">Contact</a></li>
                 </ul>
             </div>
         </div>

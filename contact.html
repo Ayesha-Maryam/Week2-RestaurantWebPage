@@ -11,22 +11,22 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="contact-container">
+    <div id="contact" class="contact-container">
         <div class="contact-item">
             <div class="navbar">
                 <ul>
                     <li class="name">Restoran</li>
-                    <li class="menu-item-nav home-item">HOME</li>
-                    <li class="menu-item-nav  contact">CONTACT</li>
-                    <li class="menu-item-nav"><button class="btn">Book a Table</button></li>
+                   <li class="menu-item-nav home-item"><a href="#home" onclick="goToHome()">HOME</a></li>
+                    <li class="menu-item-nav  contact"><a href="#contact">CONTACT</a></li>
+                    <li class="menu-item-nav"><button class="btn"><a href="home.html#book">Book a Table</a></button></li>
                     <li class="menu-icon"><span>&#9776;</span></li>
                 </ul>
             </div>
             <div class="contact-details">
                 <h1>Contact Us</h1>
                 <div class="home-contact">
-                    <h5>HOME</h5>
-                    <h5 class="contact-heading">CONTACT</h5>
+                    <h5><a href="#home" onclick="goToHome()">HOME</a></h5>
+                    <h5 class="contact-heading"><a href="#contact">CONTACT</a></h5>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
 
             <div class="map-form">
                 <div class="map">
-                    <img src="Screenshot 2024-07-17 164331.png" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.2778284003757!2d73.03926171014061!3d33.64996237319969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df956e2740f24b%3A0x900cf1f64c9030d0!2sEmumba%20Private%20Limited!5e0!3m2!1sen!2s!4v1721288974231!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="form">
                     <form class="contact-form">
@@ -70,7 +70,7 @@
                             <input class="message" type="text" placeholder="Message">
                         </div>
                         
-                        <button class="btn send-btn">Send Message</button>
+                        <button class="btn send-btn"><a href="#">Send Message</a> </button>
 
                     </form>
                 </div>
@@ -81,8 +81,8 @@
             <p>&copy; 2024 Restoran. All Rights Reserved.</p>
             <div class="links">
                 <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
+                    <li><a href="#home" onclick="goToHome()">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
