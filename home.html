@@ -7,17 +7,26 @@
     <title>Restoran</title>
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
+        <div class="arrow">
+            <h5>
+                <a href="#home">&#8593;</a>
+                
+            </h5>
+            
+        </div>
         <div id="home" class="top-item">
             <div class="navbar">
                 <ul>
-                    <li class="name">Restoran</li>
-                   <li class="menu-item-nav home-item"><a href="#home">HOME</a></li>
-                    <li class="menu-item-nav  contact"><a href="#contact" onclick="goToContact()">CONTACT</a></li>
+                    <img class="fork-img" src="image-removebg-preview.png" alt="">
+                    <li class="name"><a href="#home">Restoran</a></li>
+                   <li class="menu-item-nav home-item "><a href="#home">HOME</a></li>
+                    <li class="menu-item-nav  contact "><a href="#contact" onclick="goToContact()">CONTACT</a></li>
                     <li class="menu-item-nav"><button class="btn"><a href="#book">Book a Table</a></button></li>
                     <li class="menu-icon"><span>&#9776;</span></li>
                 </ul>
@@ -30,31 +39,35 @@
                     <button class="btn"><a href="#book">Book a Table</a></button>
                 </div>
                 <div class="img">
-                    <img class="meal-img" src="image-removebg-preview.png" alt="">
+                    <img class="meal-img" src="Screenshot 2024-07-12 154112-Photoroom.png" alt="">
                 </div>
             </div>
 
         </div>
         <div class="boxes">
             <div class="box-1">
+                <img class="masterchef-img" src="image-Photoroom.png" alt="">
                 <h3>Master Chefs</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quod repudiandae quasi minus
-                    perspiciatis, voluptate aliquid? Explicabo corporis ab numquam.</p>
+                    perspiciatis.</p>
             </div>
             <div class="box">
+                <img class="masterchef-img" src="image-removebg-preview.png" alt="">
                 <h3>Quality Food</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quod repudiandae quasi minus
-                    perspiciatis, voluptate aliquid? Explicabo corporis ab numquam.</p>
+                    perspiciatis.</p>
             </div>
             <div class="box">
+                <img class="masterchef-img" src="cart-img.png" alt="">
                 <h3>Online Order</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quod repudiandae quasi minus
-                    perspiciatis, voluptate aliquid? Explicabo corporis ab numquam.</p>
+                    perspiciatis.</p>
             </div>
             <div class="box">
+                <img class="masterchef-img" src="service-img.png" alt="">
                 <h3>24/7 Services</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quod repudiandae quasi minus
-                    perspiciatis, voluptate aliquid? Explicabo corporis ab numquam.</p>
+                    perspiciatis.</p>
             </div>
         </div>
         <div class="about">
@@ -78,8 +91,11 @@
                     </div>
                 </div>
                 <div class="about-content">
-                    <h3> <i> about Us</i> </h3>
-                    <h2>Welcome to Restoran</h2>
+                    <div class="about-line">
+                    <h3> <i> About Us</i> </h3>
+                    <h3 class="About-line">______</h3>
+                </div>
+                    <h2>Welcome to <img class="fork-img restoran-img" src="image-removebg-preview.png" alt=""> Restoran</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus earum eveniet debitis
                         sapiente? Magnam incidunt est facilis dicta quia?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis fugit porro, laudantium
@@ -90,7 +106,7 @@
                             <h1>13</h1>
                             <p>Years of<br> <b>EXPERIENCE</b></p>
                         </div>
-                        <div class="chefs">
+                        <div class="popular">
                             <h1>50</h1>
                             <p>Popular <br><b>MASTER CHEFS</b></p>
                         </div>
@@ -103,12 +119,25 @@
         <div class="item-4">
             <div class="food-menu">
                 <div class="title">
-                    <h3>Food Menu</h3>
+                    <div class="food-menu-line"><h3 class="About-line">______</h3>
+                        <h3>Food Menu</h3>
+                        <h3 class="About-line">______</h3></div>
+                    
                     <h1>Most Popular Items</h1>
                     <div class="menu">
-                        <p>Popular<br> <b>Breakfast</b></p>
-                        <p>Special <br><b> Lunch</b></p>
-                        <p>Lovely<br>  <b>Dinner</b></p>
+                        <div class="breakfast">
+                            <img class="cup-img" src="cup-img.png" alt="">
+                            <p>Popular<br> <b>Breakfast</b></p>
+                        </div>
+                        <div class="breakfast">
+                            <img class="cup-img" src="lunch-img.png" alt="">
+                            <p>Special <br><b> Lunch</b></p>
+                        </div>
+                        <div class="breakfast">
+                            <img class="cup-img" src="dinner-img.png" alt="">
+                            <p>Lovely<br>  <b>Dinner</b></p>
+                        </div>
+                        
                     </div>
                     <hr class="line">
                 </div>
@@ -224,17 +253,21 @@
             </div>
             <div class="booking" id="book">
                 <div class="booking-info">
+                    <div class="reservation-heading">
+                    <h3 class="About-line">______</h3>
                     <h3>Reservation</h3>
+                    <h3 class="About-line">______</h3>
+                </div>
                     <h1>Book A Table Online</h1>
                 </div>
                 <form class="booking-form" action="#">
                     <div class="name-email">
                         <input class="input" placeholder="Your Name" type="text" >
-                        <input class="input" placeholder="Your Email" type="text" >
+                        <input class="input" placeholder="Your Email" type="email" >
                     </div>
 
                     <div class="date-people">
-                        <input class="input" placeholder="Date & Time" type="text" >
+                        <input class="input" placeholder="Date & Time" type="datetime" >
                         <select class="input-people" placeholder="No of People" name="options">
                             <option value="option1">People 1</option>
                             <option value="option2">People 2</option>
@@ -243,7 +276,7 @@
                         </select>
                     </div>
                    <div> <textarea class="text-area" placeholder="Special Request" rows="7" cols="52"></textarea> </div>
-                  <div> <button class="book-btn"><a href="#book">BOOK NOW</a></button> </div>
+                  <div> <button class="book-btn btn"><a href="#book">BOOK NOW</a></button> </div>
                 </form>
             </div>
         </div>
@@ -251,7 +284,11 @@
 
         <div class="chefs">
             <div class="about-chefs">
+                <div class="team-member">
+                <h3 class="About-line">______</h3>
                 <h3>Team Members</h3>
+                <h3 class="About-line">______</h3>
+            </div>
                 <h1>Our Master Chefs</h1>
             </div>
             <div class="chef-boxes">
@@ -283,11 +320,16 @@
 
         <div class="client">
             <div class="testimonial">
+                <div class="testimonial-heading">
+                <h3 class="About-line">______</h3>
                 <h3>Testimonial</h3>
+                <h3 class="About-line">______</h3>
+            </div>
                 <h1>Our Clients Say!!!</h1>
             </div>
             <div class="comment-boxes">
                 <div class="comment-box">
+                    <img class="cup-img" src="Comma-img.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nam dolorem qui labore voluptas natus vitae iure possimus.</p>
                     <div class="client-details">
                         <div class="client-img">
@@ -301,6 +343,7 @@
                 </div>
 
                 <div class="comment-box comment-box-2">
+                    <img class="cup-img" src="orange-comma.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nam dolorem qui labore voluptas natus vitae iure possimus.</p>
                     <div class="client-details">
                         <div class="client-img">
@@ -314,6 +357,7 @@
                 </div>
 
                 <div class="comment-box">
+                    <img class="cup-img" src="Comma-img.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nam dolorem qui labore voluptas natus vitae iure possimus.</p>
                     <div class="client-details">
                         <div class="client-img">

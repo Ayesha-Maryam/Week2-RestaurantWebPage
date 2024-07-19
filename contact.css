@@ -39,17 +39,47 @@
     align-self: center;
     
 }
+.contact-us{
+    display:flex;
+    gap:5px;
+    color:orange;
+    justify-content: center;
+    align-content: center;
+}
+.About-Line{
+    position: relative;
+    top:-3px;
+    font-weight: bolder;
+    color: orange;
+}
 .contact-heading{
     color:orange
 }
 .contact-query{
     text-align: center;
 }
+.booking-line
+{
+    display:flex;
+    gap:5px;
+}
+.booking-mail-img
+{
+    width:40px;
+    height:30px;
+    align-self:center;
+}
+.booking-container
+{
+    display:flex;
+    gap:5px;
+    margin-left: -10px;
+}
 .contact-query h4{
     color:orange;
-    font-family: "Playwrite CU", cursive;
+    font-family: "Pacifico", cursive;
     font-optical-sizing: auto;
-    font-weight:800;
+    font-weight:500;
     font-style: normal;
 }
 .query{
@@ -63,11 +93,14 @@
     justify-content: center;
     align-content: center;
 }
+.email-box{
+    align-content: center;
+}
 .email-box h4{
     color:orange;
-    font-family: "Playwrite CU", cursive;
+    font-family: "Pacifico", cursive;
     font-optical-sizing: auto;
-    font-weight:800;
+    font-weight:500;
     font-style: normal;
 }
 .map-form{
@@ -86,12 +119,13 @@
 input{
     width:100%;
     padding:15px;
-    margin: 10px;;
+    margin: 10px;
 }
 .name-Email{
     display: flex;
-    width:100%;
+    width:106%;
 }
+
 .message{
     height:150px;
     text-align: left;
@@ -130,6 +164,7 @@ input{
         flex-direction: column;
     }
     .name-Email{
+        width:100%;
         flex-direction: column;
     }
     .form{

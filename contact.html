@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
@@ -15,15 +16,16 @@
         <div class="contact-item">
             <div class="navbar">
                 <ul>
-                    <li class="name">Restoran</li>
-                   <li class="menu-item-nav home-item"><a href="#home" onclick="goToHome()">HOME</a></li>
-                    <li class="menu-item-nav  contact"><a href="#contact">CONTACT</a></li>
-                    <li class="menu-item-nav"><button class="btn"><a href="home.html#book">Book a Table</a></button></li>
-                    <li class="menu-icon"><span>&#9776;</span></li>
+                    <img class="fork-img" src="image-removebg-preview.png" alt="">
+                    <li class="name"><a href="home.html#home">Restoran</a></li>
+                   <li class="menu-item-nav home-item clickable"><a href="#home" onclick="goToHome()">HOME</a></li>
+                    <li class="menu-item-nav  contact clickable"><a href="#contact">CONTACT</a></li>
+                    <li class="menu-item-nav clickable"><button class="btn"><a href="home.html#book">Book a Table</a></button></li>
+                    <li class="menu-icon clickable"><span>&#9776;</span></li>
                 </ul>
             </div>
             <div class="contact-details">
-                <h1>Contact Us</h1>
+                <h1><a href="#contact">Contact Us</a></h1>
                 <div class="home-contact">
                     <h5><a href="#home" onclick="goToHome()">HOME</a></h5>
                     <h5 class="contact-heading"><a href="#contact">CONTACT</a></h5>
@@ -33,24 +35,51 @@
 
         <div class="query">
             <div class="contact-query">
-                <h4>Contact Us</h4>
+                <div class="contact-us">
+                    <h3 class="About-Line">______</h3>
+                    <h4>Contact Us</h4>
+                    <h3 class="About-Line">______</h3>
+                </div>
+                
                 <h1>Contact For Any Query</h1>
             </div>
 
             <div class="email-boxes">
                 <div class="email-box">
-                    <h4>Booking</h4>
-                    <p>booking@example.com</p>
+                    <div class="booking-line">
+                        <h4>Booking</h4>
+                        <h3 class="About-Line">______</h3>
+                    </div>
+                   
+                    <div class="booking-container">
+                        <img class="booking-mail-img" src="mail-img.png" alt="">
+                        <p>boooking@example.com</p>
+                    </div>
+                    
                 </div>
                 <div class="email-box">
-                    <h4>General</h4>
-                    <p>general@example.com</p>
+                    <div class="booking-line">
+                        <h4>General</h4>
+                        <h3 class="About-Line">______</h3>
+                    </div>
+                    <div class="booking-container">
+                        <img class="booking-mail-img" src="mail-img.png" alt="">
+                        <p>general@example.com</p>
+                    </div>
+                    
                 </div>
                 <div class="email-box">
-                    <h4>Technical</h4>
-                    <p>tech@example.com</p>
+                    <div class="booking-line">
+                        <h4>Technical</h4>
+                        <h3 class="About-Line">______</h3>
+                    </div>
+                    <div class="booking-container">
+                        <img class="booking-mail-img" src="mail-img.png" alt="">
+                        <p>tech@example.com</p>
+                    </div>
+                    
                 </div>
-
+                
             </div>
 
             <div class="map-form">
@@ -61,7 +90,7 @@
                     <form class="contact-form">
                         <div class="name-Email">
                             <input class="Name" type="text" placeholder="Your Name">
-                            <input class="Email" type="text" placeholder="Your Email">
+                            <input class="Email" type="email" placeholder="Your Email">
                         </div>
                         <div>
                             <input class="subject" type="text" placeholder="Subject">
